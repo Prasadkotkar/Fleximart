@@ -39,19 +39,26 @@ A full-stack multivendor marketplace connecting sellers and buyers with secure t
 - MySQL 8.0+
 - Maven
   
-graph TD
-  A[React Frontend] -->|Axios| B[Spring Boot API]
-  B --> C[MySQL Database]
-  B --> D[Razorpay/Stripe]
-  B --> E[Spring Security]
-  E --> F[JWT Validation]
-  C --> G[Product Catalog]
-  C --> H[Order Management]
++-------------------+       +-------------------+       +-------------------+
+|   React Frontend  | <---> | Spring Boot API   | <---> |   MySQL Database  |
++-------------------+       +-------------------+       +-------------------+
+        |                           |                           |
+        |                           |                           |
+        v                           v                           v
++-------------------+       +-------------------+       +-------------------+
+|   Razorpay/Stripe |       | Spring Security   |       |   Product Catalog  |
++-------------------+       +-------------------+       +-------------------+
+        |                           |                           |
+        |                           |                           |
+        v                           v                           v
++-------------------+       +-------------------+       +-------------------+
+|   Order Tracking  |       |   JWT Validation  |       |   Order Management |
++-------------------+       +-------------------+       +-------------------+
 
 ### Installation
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/fleximart.git
+git clone <reporitorylink.git>
 
 # Backend setup
 cd backend
