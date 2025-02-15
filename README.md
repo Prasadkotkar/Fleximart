@@ -38,20 +38,7 @@ A full-stack multivendor marketplace connecting sellers and buyers with secure t
 - Node.js 16+
 - MySQL 8.0+
 - Maven
-  
-+-------------------+ +-------------------+ +-------------------+
-| React Frontend | <---> | Spring Boot API | <---> | MySQL Database |
-+-------------------+ +-------------------+ +-------------------+
-| 
-v 
-+-------------------+ +-------------------+ +-------------------+
-| Razorpay/Stripe | | Spring Security | | Product Catalog |
-+-------------------+ +-------------------+ +-------------------+
-| 
-v 
-+-------------------+ +-------------------+ +-------------------+
-| Order Tracking | | JWT Validation | | Order Management |
-+-------------------+ +-------------------+ +-------------------+
+- 
 
 ### Installation
 ```bash
