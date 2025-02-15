@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Fleximart" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.fleximart.FleximartMultiVendorApplication" />
+    <module name="Fleximart-multi-vendor-app" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
